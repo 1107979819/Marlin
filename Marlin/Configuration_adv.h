@@ -21,12 +21,13 @@
 #ifdef PIDTEMP
   // this adds an experimental additional term to the heatingpower, proportional to the extrusion speed.
   // if Kc is choosen well, the additional required power due to increased melting should be compensated.
-  #define PID_ADD_EXTRUSION_RATE
-  #ifdef PID_ADD_EXTRUSION_RATE
+  ////////////add/modify by wyl
+  #define PID_EXTRUSION_SCALING
+  #ifdef PID_EXTRUSION_SCALING
     #define  DEFAULT_Kc (1) //heatingpower=Kc*(e_speed)
   #endif
 #endif
-
+////////////end add/modify
 
 //automatic temperature: The hot end target temperature is calculated by all the buffered lines of gcode.
 //The maximum buffered steps/sec of the extruder motor are called "se".
