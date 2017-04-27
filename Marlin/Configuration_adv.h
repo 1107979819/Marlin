@@ -86,7 +86,7 @@
 //=============================Mechanical Settings===========================
 //===========================================================================
 
-#define ENDSTOPS_ONLY_FOR_HOMING // If defined the endstops will only be used for homing
+#define ENDSTOPS_ALWAYS_ON_DEFAULT // If defined the endstops will only be used for homing////////////add/modify by wyl
 
 
 //// AUTOSET LOCATIONS OF LIMIT SWITCHES
