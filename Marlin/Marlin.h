@@ -48,8 +48,8 @@
     #define MYSERIAL Serial
   #endif // BLUETOOTH
 #else
-  //#include "MarlinSerial.h"
-  //#define MYSERIAL customizedSerial
+  #include "MarlinSerial.h"
+  #define MYSERIAL customizedSerial
 #endif
 
 #include "WString.h"
