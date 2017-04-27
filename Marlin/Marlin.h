@@ -48,8 +48,8 @@
     #define MYSERIAL Serial
   #endif // BLUETOOTH
 #else
-  #include "MarlinSerial.h"
-  #define MYSERIAL customizedSerial
+  //#include "MarlinSerial.h"
+  //#define MYSERIAL customizedSerial
 #endif
 
 #include "WString.h"
@@ -103,7 +103,7 @@ FORCE_INLINE void serial_echopair_P(const char* s_P, void *v) { serial_echopair_
 
 // Things to write to serial from Program memory. Saves 400 to 2k of RAM.
 FORCE_INLINE void serialprintPGM(const char* str) {
-  while (char ch = pgm_read_byte(str++)) MYSERIAL.write(ch);
+ // while (char ch = pgm_read_byte(str++)) MYSERIAL.write(ch);
 }
 
 void idle(
