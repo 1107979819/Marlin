@@ -457,14 +457,17 @@ const bool Z_MAX_ENDSTOP_INVERTING = true; // set to true to invert the logic of
 // please keep turned on if you can.
 //#define EEPROM_CHITCHAT
 
-// Preheat Constants
-#define PLA_PREHEAT_HOTEND_TEMP 180
-#define PLA_PREHEAT_HPB_TEMP 40
-#define PLA_PREHEAT_FAN_SPEED 255   // Insert Value between 0 and 255
 
-#define ABS_PREHEAT_HOTEND_TEMP 240
-#define ABS_PREHEAT_HPB_TEMP 100
-#define ABS_PREHEAT_FAN_SPEED 255   // Insert Value between 0 and 255
+
+////////////add/modify by wyl
+#define PREHEAT_1_TEMP_HOTEND 180
+#define PREHEAT_1_TEMP_BED     40
+#define PREHEAT_1_FAN_SPEED     255 // Value from 0 to 255
+
+#define PREHEAT_2_TEMP_HOTEND 240
+#define PREHEAT_2_TEMP_BED    100
+#define PREHEAT_2_FAN_SPEED     255 // Value from 0 to 255
+////////////end add/modify
 
 //LCD and SD support
 //#define ULTRA_LCD  //general lcd support, also 16x2
